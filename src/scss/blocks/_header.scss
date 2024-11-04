@@ -1,9 +1,25 @@
 .header {
-	padding: 50px 0;
+	padding: 40px 0;
 
 	&__row {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 30px;
+	}
+
+	&__subtitle {
+		margin-top: 5px;
+
+		font-size: 14px;
+		line-height: 1.6;
+		color: var(--accent-color);
+	}
+
+	&__socials {
+		display: flex;
+		column-gap: 20px;
+		color: var(--text-color);
+		color: var(--);
 	}
 }
