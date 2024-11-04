@@ -1,3 +1,27 @@
-span {
-    background-color: var(--);
+.resume {
+    &__row {
+        display: flex;
+        gap: 30px;
+    }
+    &__about, &__skils {
+        padding: 30px 30px 48px;
+        background-color: #fbfbfb;
+        flex: 1;
+    }
+    &__header {
+        margin-bottom: 20px;
+    }
+    &__desc p + p {
+        margin-top: 15px;
+    }
+    &__skil {
+    }
+}
+.html {
+}
+.css {
+}
+.scss {
+}
+.JS {
 }
