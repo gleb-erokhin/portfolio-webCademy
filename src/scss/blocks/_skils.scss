@@ -1,0 +1,32 @@
+.skil {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 2px 6px;
+    height: 19px;
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+
+    &--html {
+        background-color: #414141;
+    }
+    &--css {
+        background-color: #39a0ff;
+    }
+    &--scss {
+        background: #dd6adf;
+    }
+    &--JS {
+        background: #ffce20;
+        color: #000;
+    }
+}
+
+.skils {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 5px;
+}

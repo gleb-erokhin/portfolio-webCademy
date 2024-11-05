@@ -3,20 +3,44 @@
         display: flex;
         gap: 30px;
     }
-    &__about, &__skils {
+    &__about,
+    &__skils {
         padding: 30px 30px 48px;
         background-color: #fbfbfb;
+        // width: 585px;
         flex: 1;
     }
-    &__header {
+    &__header,
+    &__skil {
         margin-bottom: 20px;
     }
     &__desc p + p {
         margin-top: 15px;
     }
-    &__skil {
+    &__list {
+        padding-left: 9px;
+        font-size: 14px;
+    }
+    &__list li + li {
+        margin-top: 10px;
+    }
+    &__list-item {
+        position: relative;
+        padding-left: 12px;
+    }
+
+    &__list-item::before {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: black;
+        top: 50%;
+        left: 0;
     }
 }
+
 .html {
 }
 .css {

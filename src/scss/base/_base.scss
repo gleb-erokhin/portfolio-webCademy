@@ -1,30 +1,33 @@
-@font-face {
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Manrope';
+//     src: url('../fonts/Manrope-Regular.woff2') format('woff2');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Manrope';
+//     src: url('../fonts/Manrope-Light.woff2') format('woff2');
+//     font-weight: 300;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Manrope';
+//     src: url('../fonts/Manrope-Bold.woff2') format('woff2');
+//     font-weight: 700;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Manrope';
+//     src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2');
+//     font-weight: 800;
+//     font-style: normal;
+// }
+
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,700,800);
+@import url(https://fonts.googleapis.com/css?family=Inter:700);
 
 html {
 	scroll-behavior: smooth;
@@ -35,6 +38,8 @@ body {
 	color: var(--text-color);
     font-family: var(--font-family);
 	line-height: var(--line-hight);
+	font-weight: 400;
+
 }
 
 img {
