@@ -7,11 +7,9 @@
     &__skils {
         padding: 30px 30px 48px;
         background-color: #fbfbfb;
-        // width: 585px;
         flex: 1;
     }
-    &__header,
-    &__skil {
+    &__header {
         margin-bottom: 20px;
     }
     &__desc p + p {
@@ -28,7 +26,6 @@
         position: relative;
         padding-left: 12px;
     }
-
     &__list-item::before {
         position: absolute;
         content: "";
@@ -39,13 +36,4 @@
         top: 50%;
         left: 0;
     }
-}
-
-.html {
-}
-.css {
-}
-.scss {
-}
-.JS {
 }
