@@ -1,26 +1,16 @@
 .footer {
-	background-color: rgb(39, 39, 39);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #131313;
+	&__row {
+		font-size: 14px;
+		line-height: 1;
+		color: rgba(255, 255, 255, 0.5);
 
-	h1 {
-		font-size: 32px;
+		display: flex;
+		justify-content: space-between;
 	}
-
-	a {
-		// color: var(--link-color);
-		color: #fff;
-		text-decoration: underline;
+	&__about span {
+		color: rgba(255, 255, 255, 0.75);
 	}
-
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
-}
-
-.footer__copyright {
-	padding: 10px 0;
-	font-size: 16px;
-
 }
