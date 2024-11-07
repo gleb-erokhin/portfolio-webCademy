@@ -2,6 +2,9 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #131313;
+	@include mobile {
+		padding: 10px 0;
+	}
 	&__row {
 		font-size: 14px;
 		line-height: 1;
@@ -9,6 +12,12 @@
 
 		display: flex;
 		justify-content: space-between;
+
+		@include mobile {
+			flex-direction: column;
+			gap: 10px;
+			font-style: 12px;
+		}
 	}
 	&__about span {
 		color: rgba(255, 255, 255, 0.75);

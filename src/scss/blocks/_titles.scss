@@ -5,11 +5,26 @@
 	line-height: 1;
 }
 
+.title-1--mod {
+	@include tablet {
+		font-size: 26px;
+	}
+	@include mobile {
+		font-size: 22px;
+	}
+}
+
 .title-2 {
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 1;
+}
+
+.title-2--mod {
+	@include tablet {
+		font-size: 24px;
+	}
 }
 
 .title-3 {

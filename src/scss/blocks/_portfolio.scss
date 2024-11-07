@@ -1,12 +1,22 @@
 .portfolio {
     padding-top: 50px;
     padding-bottom: 25px;
+    
+    @include tablet {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
 
     &__header {
         margin-bottom: 30px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
     &__cards {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 34px;

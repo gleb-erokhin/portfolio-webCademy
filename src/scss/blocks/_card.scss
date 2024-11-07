@@ -1,21 +1,59 @@
 .card {
     max-width: 380px;
 
-    &__img {
-        background-color: #f6f6f6;
-        padding: 23px 47px 26px;
-        margin-bottom: 12px;
+    @include tablet {
+        max-width: 354px;
     }
-    &__data { 
-        position: relative;
-    }
-    &__data img {
-        position: absolute;
 
-        bottom: 50%;
-        left: 50%;
-        transform: translate(-50%, -41%);
+    @include mobile {
+        max-width: 329px;
     }
+
+    &__img-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 23px 34px 26px;
+        background-color: #f6f6f6;
+        margin-bottom: 12px;
+
+        @include mobile {
+            padding: 23px 0px 26px;
+        }
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+
+        width: 286px;
+        aspect-ratio: 286 / 161;
+        background-image: url("./../../img/cards/laptop.png");
+        background-size: contain;
+    }
+    // &__img {
+    //     background-image: url('./../../img/cards/laptop.png');
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+
+    //     padding: 23px 47px 26px;
+    //     background-color: #f6f6f6;
+    //     margin-bottom: 12px;
+
+    //     @include tablet {
+    //         padding: 23px 34px 26px;
+    //     }
+    // }
+    // &__data {
+    //     position: relative;
+    // }
+    // &__data img {
+    //     position: absolute;
+
+    //     bottom: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -41%);
+    // }
     &__decs {
         display: flex;
         flex-direction: column;
