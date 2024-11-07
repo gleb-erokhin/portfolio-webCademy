@@ -4,10 +4,22 @@ a.btn {
     column-gap: 10px;
 
     background-color: #039be5;
+    transition: background-color 0.2s ease-in;
+
     border-radius: 80px;
     padding: 10px 20px;
 
     font-weight: 700;
     font-size: 16px;
     color: #fff;
+}
+
+.btn:hover,
+a.btn:hover {
+    background-color: #039ae5b0;
+}
+
+.btn--social:hover,
+a.btn--social:hover {
+    opacity: 0.8;
 }

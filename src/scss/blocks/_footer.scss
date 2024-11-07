@@ -20,6 +20,12 @@
 		}
 	}
 	&__about span {
+	}
+	&__about a {
+		color: rgba(255, 255, 255, 0.4);
+		transition: color 0.2s ease-in;
+	}
+	&__about a:hover {
 		color: rgba(255, 255, 255, 0.75);
 	}
 }
