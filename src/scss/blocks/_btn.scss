@@ -4,7 +4,9 @@ a.btn {
     column-gap: 10px;
 
     background-color: #039be5;
-    transition: background-color 0.2s ease-in;
+    transition:
+        background-color 0.2s ease-in,
+        opacity 0.2s ease-in;
 
     border-radius: 80px;
     padding: 10px 20px;
