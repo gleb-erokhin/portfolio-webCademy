@@ -9,7 +9,8 @@ console.log(productsItems);
 cards.forEach(element => {
     productsItems.insertAdjacentHTML('beforeend',
         `
-            <div class="card" ${element.id}>
+            <div class="card" data-id=${element.id}>
+            <!-- ссылка сколрее всего не нужна, открывать модалку будем по клику -->
                 <a href="#!6">
                     <div class="card__img-wrapper">
                         <div class=" card__img">
