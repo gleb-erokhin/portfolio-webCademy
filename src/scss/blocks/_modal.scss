@@ -34,7 +34,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 7px;
+        padding-bottom: 10px;
 
         width: 505px;
         aspect-ratio: 505 / 284;
@@ -116,11 +116,6 @@
     }
 }
 
-// .modal {
-//     @include tablet {
-//         padding: 1rem !important;
-//     }
-// }
-// .modal:hover {
-//     transform: translateY(-5px);
-// }
+.modal__wrapper {
+    display: none;
+}

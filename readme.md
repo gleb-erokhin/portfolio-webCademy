@@ -1,48 +1,7 @@
-# html
-  |-*blocks*
-  |    |- header.html
-  |    |- footer.html
-  |    |- nav.html
-  |
-  |-*blog*
-  |    |- post1.html
-  |    |- post2.html
-  |
-  |- contacts.html    
-  |- index.html
+# Учебный проект
 
-
-1.  @@include('./../blocks/header.html') - подключаем в файле post1.html
-2.  @@include('blocks/header.html') - подключаем в файле index.html
-3. <a href="./../index.html">Main page</a> - ссылка со страницы post.html
-
-
-
-/** 
- * 
- * 
- */
-gulp.task('xxxx', function () {
-    return gulp.src('./src/*.html')
-        .pipe()
-        .pipe(gulp.dest('./dist/'))
-});
-/** 
- * 
- * 
- */
-gulp.task('xxxx', function () {
-    return gulp.src('./src/')
-        .pipe()
-        .pipe()
-});
-
-/** 
- * 
- * 
- */
-const xxx = require('xxx');
-
-const { error } = require('console');
-const { title } = require('process');
-const changed = require('gulp-changed');
+1. Верстка страницы с помощью Gulp сборки
+2. Мобильная адаптация до 360px
+3. Добавление карточек с проектами посредством кода JS. Карточки формируются на лету из файла JSON
+4. Каждая карточка активна. При нажатии на нее открывается модальное окно сделанное на FancyBox.
+5. Данные в модальном окне меняются в зависимости от карточки. Настроено с кодом JS из файла JSON

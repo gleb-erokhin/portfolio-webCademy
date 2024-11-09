@@ -172,7 +172,7 @@ gulp.task('html:docs', function () {
                 '$1$2$3$4$6$1'
             )
         )
-        .pipe(webphtml())
+        // .pipe(webphtml())
         .pipe(htmlclean())
         .pipe(gulp.dest('./docs/'))
 });
@@ -188,7 +188,7 @@ gulp.task('html:docs', function () {
  * csso - минификация файла css, убирает все пробелы и отступы
  */
 gulp.task('sass:docs', function () {
-    return gulp.src('./src/scss/*.scss')
+    return gulp.src(['./src/scss/*.scss', './src/libs/**/*.css'])
         .pipe(changed('./docs/css'))
         .pipe(plumber(plumberNotify('SCSS')))
         // .pipe(sourceMaps.init())
@@ -217,7 +217,7 @@ gulp.task('sass:docs', function () {
 gulp.task('images:docs', function () {
     return gulp.src('./src/img/**/*')
         .pipe(changed('./docs/img/'))
-        .pipe(webp())
+        // .pipe(webp())
         // .pipe(
         //     imageMin([
         //         imageminWebp({
@@ -229,16 +229,16 @@ gulp.task('images:docs', function () {
         .pipe(gulp.dest('./docs/img/'))
         .pipe(gulp.src('./src/img/**/*'))
         .pipe(changed('./docs/img/'))
-        .pipe(
-            imageMin(
-                [
-                    imageMin.gifsicle({ interlaced: true }),
-                    imageMin.mozjpeg({ quality: 85, progressive: true }),
-                    imageMin.optipng({ optimizationLevel: 5 }),
-                ],
-                { verbose: true }
-            )
-        )
+        // .pipe(
+        //     imageMin(
+        //         [
+        //             imageMin.gifsicle({ interlaced: true }),
+        //             imageMin.mozjpeg({ quality: 85, progressive: true }),
+        //             imageMin.optipng({ optimizationLevel: 5 }),
+        //         ],
+        //         { verbose: true }
+        //     )
+        // )
         .pipe(gulp.dest('./docs/img/'))
 });
 
@@ -260,6 +260,16 @@ gulp.task('files:docs', function () {
     return gulp.src('./src/files/**/*')
         .pipe(changed('./docs/files/'))
         .pipe(gulp.dest('./docs/files/'))
+});
+
+/** libs
+ * Копирование файлов стороних библиотек для использования в проекте, обработка файлов js идет из папки libs
+ * @src - любая папка внутри img и любой файл
+ */
+gulp.task('libs:docs', function () {
+    return gulp.src('./src/libs/**/*.js')
+        .pipe(changed('./docs/libs/'))
+        .pipe(gulp.dest('./docs/libs/'))
 });
 
 /** JS
