@@ -1,6 +1,7 @@
 .modal {
     // display: none;
     width: 768px;
+    padding: unset !important;
 
     @include tablet {
         width: 738px;
@@ -18,11 +19,16 @@
         display: flex;
         justify-content: center;
         background-color: #f6f6f6;
+        padding: 40px 130px 45px;
         margin-bottom: 12px;
 
-        // @include mobile {
-        //     padding: 23px 0px 26px;
-        // }
+        @include tablet {
+            padding: 40px 117px 45px;
+        }
+
+        @include mobile {
+            padding: 23px 0px 26px;
+        }
     }
     &__img {
         display: flex;
@@ -34,11 +40,27 @@
         aspect-ratio: 505 / 284;
         background-image: url("./../../img/cards/laptop.png");
         background-size: contain;
+
+        @include mobile {
+            width: 290px;
+            aspect-ratio: 290 / 162;
+        }
+    }
+    &__img img {
+        @include mobile {
+            width: 220px;
+        }
     }
     &__decs {
         display: flex;
         flex-direction: column;
         gap: 4px;
+
+        padding: 20px 40px 30px;
+
+        @include mobile {
+            padding: 20px 20px 20px;
+        }
     }
     &__header {
         margin-bottom: 10px;
@@ -47,7 +69,7 @@
         margin-bottom: 15px;
         font-size: 14px;
     }
-    &__text p+p {
+    &__text p + p {
         padding-top: 15px;
     }
     &__skils {
@@ -59,6 +81,9 @@
     &__source {
         display: flex;
         gap: 10px;
+        @include mobile {
+            flex-direction: column;
+        }
     }
     &__source span {
         font-size: 14px;
@@ -67,6 +92,9 @@
         padding: 6px 10px;
         width: 146px;
         background: #f2f2f2;
+        @include mobile {
+            width: 100%;
+        }
     }
     &__source-item {
         display: flex;
@@ -76,7 +104,7 @@
     &--list {
         margin-bottom: 20px;
     }
-    &--list li+li {
+    &--list li + li {
         padding-top: 10px;
     }
     &--list-item::before {
@@ -88,6 +116,11 @@
     }
 }
 
+// .modal {
+//     @include tablet {
+//         padding: 1rem !important;
+//     }
+// }
 // .modal:hover {
 //     transform: translateY(-5px);
 // }
