@@ -1,10 +1,9 @@
 .modal {
+    // display: none;
     width: 768px;
-    box-shadow: 0px 0px 10px 0px rgba(126, 155, 189, 0.35);
-    transition: transform 0.2s ease-in;
 
     @include tablet {
-        width: 354px;
+        width: 738px;
     }
 
     @include mobile {
@@ -18,13 +17,12 @@
     &__img-wrapper {
         display: flex;
         justify-content: center;
-        padding: 40px 130px 45px;
         background-color: #f6f6f6;
         margin-bottom: 12px;
 
-        @include mobile {
-            padding: 23px 0px 26px;
-        }
+        // @include mobile {
+        //     padding: 23px 0px 26px;
+        // }
     }
     &__img {
         display: flex;
@@ -41,7 +39,6 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
-        padding: 20px 40px 30px;
     }
     &__header {
         margin-bottom: 10px;
@@ -78,6 +75,9 @@
     }
     &--list {
         margin-bottom: 20px;
+    }
+    &--list li+li {
+        padding-top: 10px;
     }
     &--list-item::before {
         background-color: #0f7dff;

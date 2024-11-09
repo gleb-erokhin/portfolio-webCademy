@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/main.css">
-
+        <link rel="stylesheet" href="./css/fancybox/fancybox.css">
         <title>Main page</title>
     </head>
 
@@ -143,7 +143,7 @@
 </footer>
 <div class="modal__wrapper">
 
-    <div class="modal">
+    <div class="modal" id="modalWindow">
     <div class="modal__img-wrapper">
         <div class=" modal__img">
             <img src="./img/cards/06.png" width="382" alt="">
@@ -151,7 +151,7 @@
     </div>
     <div class="modal__decs">
         <div class="modal__header">
-            <h3 class="title-3 title-3--modal">ЭпикТрэвел</h3>
+            <h3 class="title-3 title-3--modal" data-header="header">ЭпикТрэвел</h3>
         </div>
         <div class="modal__text">
             <p class="text text--modal">Верстка сайта визитки. 3 страницы, форма обратной связи, мобильная адаптация,
@@ -168,13 +168,13 @@
             <li class="ul__list-item modal--list-item"><a href="#!" target="_blank">Контакты</a></li>
         </ul>
         <div class="modal__skils">
-            <span>HTML</span>
-            <span>SCSS</span>
-            <span>JS</span>
+            <span>HTML,</span>
+            <span>SCSS,</span>
+            <span>JS,</span>
             <span>Webpack</span>
         </div>
         <div class="modal__source">
-            <a href="%!">
+            <a href="#!">
                 <span class="modal__source-item">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -199,6 +199,9 @@
 </div>
 </div>
 
+        <!-- Vendors -->
+        <script src="./libs/fancybox/fancybox.umd.js"></script>
+        <!-- main -->
         <script src="./libs/data.js"></script>
         <script src="./js/index.bundle.js"></script>
     </body>

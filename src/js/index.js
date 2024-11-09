@@ -10,16 +10,15 @@ cards.forEach(element => {
     productsItems.insertAdjacentHTML('beforeend',
         `
             <div class="card" data-id=${element.id}>
-            <!-- ссылка сколрее всего не нужна, открывать модалку будем по клику -->
-                <a href="#!6">
+                <a href="#!" data-fancybox data-src="#modalWindow">
                     <div class="card__img-wrapper">
                         <div class=" card__img">
                             <img src="${element.img}" width="216" alt="">
                         </div>
                     </div>
                     <div class="card__decs">
-                        <div class="card__header">
-                            <h3 class="title-3">${element.title}</h3>
+                        <div class="card__header" >
+                            <h3 class="title-3" data-header="header">${element.title}</h3>
                         </div>
                         <div class="card__text">
                             <p class="text">${element.info}
@@ -33,4 +32,9 @@ cards.forEach(element => {
             </div> 
         `
     )
+});
+
+// FancyBox
+Fancybox.bind('[data-fancybox]', {
+
 });
