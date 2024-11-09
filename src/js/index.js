@@ -13,7 +13,7 @@ cards.forEach(element => {
                 <a href="#!" data-fancybox data-src="#modalWindow">
                     <div class="card__img-wrapper">
                         <div class=" card__img">
-                            <img src="${element.img}" width="216" alt="">
+                            <img src="${element.img}" width="216" alt="" data-img="img">
                         </div>
                     </div>
                     <div class="card__decs">
@@ -21,7 +21,7 @@ cards.forEach(element => {
                             <h3 class="title-3" data-header="header">${element.title}</h3>
                         </div>
                         <div class="card__text">
-                            <p class="text">${element.info}
+                            <p class="text" data-text="text">${element.info}
                             </p>
                         </div>
                         <div class="card__skils">
