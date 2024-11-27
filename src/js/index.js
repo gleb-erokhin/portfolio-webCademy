@@ -6,6 +6,8 @@
         modalImg = modalWindow.querySelector("[data-target='img']"),
         modalHeader = modalWindow.querySelector("[data-target='header']"),
         modalText = modalWindow.querySelector("[data-target='text']"),
+        modalGitSource = modalWindow.querySelector("[data-git='gitSource']"),
+        modalGitDemo = modalWindow.querySelector("[data-git='gitDemo']"),
         modalPages = modalWindow.querySelector(".modal--list"),
         modalSkils = modalWindow.querySelector(".modal__skils");
 
@@ -46,6 +48,8 @@
             modalHeader.textContent = cardData.title;
             modalText.textContent = cardData.info;
             modalSkils.innerHTML = cardData.skils;
+            modalGitSource.setAttribute('href', cardData.gitSource);
+            modalGitDemo.setAttribute('href', cardData.gitDemo);
         }
     });
 

@@ -3,7 +3,7 @@ const cardsData = `[
         "id": 1,
         "title": "ЭпикТрэвел",
         "info": "Верстка сайта визитки. 3 страницы, форма обратной связи, мобильная адаптация, retina ready.",
-        "skils": "<span>HTML,</span> <span>CSS,</span> <span>PHP</span>",
+        "skils": "<span>HTML,</span> <span>CSS,</span> <span>PHP</span> ",
         "links": "<span>Смотреть демо</span> <span>GitHub проекта</span>",
         "img": "./img/cards/01.jpg",
         "bigImg": "./img/cards/01@2x.jpg"
@@ -58,7 +58,8 @@ const cardsData = `[
         "title": "Fengo",
         "info": "Шаблон для интернет магазина одежды",
         "skils": "<span>HTML,</span> <span>Git</span>",
-        "links": "<span>Смотреть демо</span> <span>GitHub проекта</span>",
+        "gitSource": "https://github.com/gleb-erokhin/GB_adaptive_lending",
+        "gitDemo": "https://gleb-erokhin.github.io/GB_adaptive_lending/",
         "img": "./img/cards/07.jpg",
         "bigImg": "./img/cards/07@2x.jpg"
     }
