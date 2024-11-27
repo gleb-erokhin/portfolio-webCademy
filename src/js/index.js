@@ -9,7 +9,7 @@
         modalGitSource = modalWindow.querySelector("[data-git='gitSource']"),
         modalGitDemo = modalWindow.querySelector("[data-git='gitDemo']"),
         modalPages = modalWindow.querySelector(".modal--list"),
-        modalSkils = modalWindow.querySelector(".modal__skils");
+        modalSkils = modalWindow.querySelector("[data-target='skils']");
 
     // Заполнение карточек на странице
     a.forEach(item => {

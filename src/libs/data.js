@@ -19,10 +19,11 @@ const cardsData = `[
     },
     {
         "id": 3,
-        "title": "Салон красоты",
-        "info": "Создание сайта салона красоты",
+        "title": "100 юристов",
+        "info": "Создание сайта юридической группы",
         "skils": "<span>HTML,</span> <span>SCSS,</span> <span>JS,</span> <span>Gulp</span>",
-        "links": "<span>Смотреть демо</span> <span>GitHub проекта</span>",
+        "gitSource": "https://github.com/gleb-erokhin/100lawyers",
+        "gitDemo": "https://gleb-erokhin.github.io/100lawyers/",
         "img": "./img/cards/03.jpg",
         "bigImg": "./img/cards/03@2x.jpg"
     },
@@ -56,7 +57,7 @@ const cardsData = `[
         {
         "id": 7,
         "title": "Fengo",
-        "info": "Шаблон для интернет магазина одежды",
+        "info": "Шаблон для интернет магазина одежды, Макет предоставлен с помощью сервиса Marcy, на 16.03.2024 разработан основной макет страницы, для работы над макетом использован Bootstrap для добавления карусели, адаптивная версия не планируется 26.11.24",
         "skils": "<span>HTML,</span> <span>Git</span>",
         "gitSource": "https://github.com/gleb-erokhin/GB_adaptive_lending",
         "gitDemo": "https://gleb-erokhin.github.io/GB_adaptive_lending/",
