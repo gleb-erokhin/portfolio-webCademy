@@ -52,5 +52,14 @@ const cardsData = `[
         "links": "<span>Смотреть демо</span> <span>GitHub проекта</span>",
         "img": "./img/cards/06.jpg",
         "bigImg": "./img/cards/06@2x.jpg"
+    },
+        {
+        "id": 7,
+        "title": "Fengo",
+        "info": "Шаблон для интернет магазина одежды",
+        "skils": "<span>HTML,</span> <span>Git</span>",
+        "links": "<span>Смотреть демо</span> <span>GitHub проекта</span>",
+        "img": "./img/cards/07.jpg",
+        "bigImg": "./img/cards/07@2x.jpg"
     }
 ]`
