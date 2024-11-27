@@ -5,7 +5,8 @@
         modalWindow = document.getElementById("modalWindow"),
         modalImg = modalWindow.querySelector("[data-target='img']"),
         modalHeader = modalWindow.querySelector("[data-target='header']"),
-        modalText = modalWindow.querySelector("[data-target='text']"),
+        // modalText = modalWindow.querySelector("[data-target='info']"),
+        modalDesc = modalWindow.querySelector("[data-target='about']"),
         modalGitSource = modalWindow.querySelector("[data-git='gitSource']"),
         modalGitDemo = modalWindow.querySelector("[data-git='gitDemo']"),
         modalPages = modalWindow.querySelector(".modal--list"),
@@ -23,7 +24,7 @@
 					</div>
 					<div class="card__decs">
 						<div class="card__header">
-							<h3 class="title-3" data-header="header">${item.title}</h3>
+							<h3 class="title-3" data-header="header">${item.header}</h3>
 						</div>
 						<div class="card__text">
 							<p class="text" data-text="text">${item.info}</p>
@@ -45,8 +46,9 @@
 
             // Заполнение модального окна
             modalImg.src = cardData.bigImg;
-            modalHeader.textContent = cardData.title;
-            modalText.textContent = cardData.info;
+            modalHeader.textContent = cardData.header;
+            // modalText.textContent = cardData.info;
+            modalDesc.innerHTML = cardData.about;
             modalSkils.innerHTML = cardData.skils;
             modalGitSource.setAttribute('href', cardData.gitSource);
             modalGitDemo.setAttribute('href', cardData.gitDemo);
