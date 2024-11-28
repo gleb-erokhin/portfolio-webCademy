@@ -1,11 +1,15 @@
 .resume {
     &__row {
         display: flex;
+        flex-direction: unset;
         gap: 30px;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
-            gap: 20px;
+        }
+
+        @include mobile {
+            // gap: 20px;
         }
     }
     &__about,

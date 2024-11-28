@@ -1,14 +1,14 @@
 .card {
-    width: 380px;
+    max-width: 380px;
     box-shadow: 0px 0px 10px 0px rgba(126, 155, 189, 0.35);
     transition: transform 0.2s ease-in;
 
     @include tablet {
-        width: 354px;
+        max-width: 354px;
     }
 
     @include mobile {
-        width: 330px;
+        max-width: 330px;
     }
 
     & a {

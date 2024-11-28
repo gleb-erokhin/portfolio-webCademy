@@ -19,7 +19,7 @@
 				<a href="#!" data-fancybox data-src="#modalWindow">
 					<div class="card__img-wrapper"> 
 						<div class="card__img">
-							<img src="${item.img}" width="216" alt="" data-img="img">
+							<img src="${item.img}" srcset="${item.bigImg} 2x" width="216" alt="" data-img="img">
 						</div>
 					</div>
 					<div class="card__decs">
