@@ -1,4 +1,5 @@
 // "info" - только для самой карточки в модальном окне не используется
+// prefix - нужен для использования фото в режиме retina
 const cardsData = `[
     {
         "id": 1,
@@ -9,7 +10,8 @@ const cardsData = `[
         "gitSource": "https://github.com/gleb-erokhin/epicTravel",
         "gitDemo": "https://gleb-erokhin.github.io/epicTravel/index.html",
         "img": "./img/cards/01.jpg",
-        "bigImg": "./img/cards/01@2x.jpg"
+        "bigImg": "./img/cards/01@2x.jpg",
+        "prefix": " 2x"
     },
     {
         "id": 2,
@@ -20,7 +22,8 @@ const cardsData = `[
         "gitSource": "https://github.com/gleb-erokhin/CoWorks",
         "gitDemo": "https://gleb-erokhin.github.io/CoWorks/",
         "img": "./img/cards/02.jpg",
-        "bigImg": "./img/cards/02@2x.jpg"
+        "bigImg": "./img/cards/02@2x.jpg",
+        "prefix": " 2x"
     },
     {
         "id": 3,
@@ -31,7 +34,8 @@ const cardsData = `[
         "gitSource": "https://github.com/gleb-erokhin/100lawyers",
         "gitDemo": "https://gleb-erokhin.github.io/100lawyers/",
         "img": "./img/cards/03.jpg",
-        "bigImg": "./img/cards/03@2x.jpg"
+        "bigImg": "./img/cards/03@2x.jpg",
+        "prefix": " 2x"
     },
     {
         "id": 4,
@@ -42,7 +46,8 @@ const cardsData = `[
         "gitSource": "https://github.com/gleb-erokhin/GB_introdaction_HTML",
         "gitDemo": "https://gleb-erokhin.github.io/GB_introdaction_HTML/",
         "img": "./img/cards/04.jpg",
-        "bigImg": "./img/cards/04@2x.jpg"
+        "bigImg": "./img/cards/04@2x.jpg",
+        "prefix": " 2x"
     },
     {
         "id": 5,
@@ -53,7 +58,8 @@ const cardsData = `[
         "gitSource": "https://github.com/gleb-erokhin/GB_professional_HTML",
         "gitDemo": "https://gleb-erokhin.github.io/GB_professional_HTML/",
         "img": "./img/cards/05.jpg",
-        "bigImg": "./img/cards/05@2x.jpg"
+        "bigImg": "./img/cards/05@2x.jpg",
+        "prefix": " 2x"
     },
     {
         "id": 6,
@@ -64,6 +70,7 @@ const cardsData = `[
         "gitSource": "https://github.com/gleb-erokhin/GB_adaptive_lending",
         "gitDemo": "https://gleb-erokhin.github.io/GB_adaptive_lending/",
         "img": "./img/cards/07.jpg",
-        "bigImg": "./img/cards/07@2x.jpg"
+        "bigImg": "./img/cards/07@2x.jpg",
+        "prefix": " 2x"
     }
 ]`

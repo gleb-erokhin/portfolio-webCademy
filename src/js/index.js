@@ -19,7 +19,7 @@
 				<a href="#!" data-fancybox data-src="#modalWindow">
 					<div class="card__img-wrapper"> 
 						<div class="card__img">
-							<img src="${item.img}" srcset="${item.bigImg} 2x" width="216" alt="" data-img="img">
+							<img src="${item.img}" srcset="${item.bigImg + item.prefix}" width="216" alt="" data-img="img">
 						</div>
 					</div>
 					<div class="card__decs">
@@ -45,7 +45,8 @@
             const cardData = a.find(item => item.id == cardId);
 
             // Заполнение модального окна
-            modalImg.src = cardData.bigImg;
+            modalImg.src = cardData.img;
+            modalImg.srcset = cardData.bigImg + cardData.prefix;
             modalHeader.textContent = cardData.header;
             // modalText.textContent = cardData.info;
             modalDesc.innerHTML = cardData.about;

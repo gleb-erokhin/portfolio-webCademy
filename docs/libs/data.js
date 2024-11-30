@@ -3,7 +3,7 @@ const cardsData = `[
     {
         "id": 1,
         "header": "ЭпикТрэвел",
-        "info": "Верстка сайта визитки. 3 страницы, форма обратной связи, мобильная адаптация, retina ready.",
+        "info": "Верстка сайта визитки. 4 страницы",
         "about": "<li>Разработка сайта по макету из Figma на курсе Webcademy</li> <li>Создание 4 страниц, связь меню между страницами</li> <li>Создание кастомных чекбоксов</li> <li>Разработка адаптива до 360px</li>",
         "skils": "<span>HTML,</span> <span>CSS</span> ",
         "gitSource": "https://github.com/gleb-erokhin/epicTravel",
@@ -56,14 +56,14 @@ const cardsData = `[
         "bigImg": "./img/cards/05@2x.jpg"
     },
     {
-    "id": 7,
-    "header": "Fengo",
-    "info": "Шаблон для интернет магазина одежды",
-    "about": "<li>Макет верстался с помощью сервиса Marcy</li> <li>На 16.03.2024 разработан основной макет страницы.</li> <li>Для работы над макетом использован Bootstrap для добавления карусели</li> <li>Адаптивная версия не планируется 26.11.24</li>",
-    "skils": "<span>HTML,</span> <span>Git,</span> <span>Bootstrap 4</span>",
-    "gitSource": "https://github.com/gleb-erokhin/GB_adaptive_lending",
-    "gitDemo": "https://gleb-erokhin.github.io/GB_adaptive_lending/",
-    "img": "./img/cards/07.jpg",
-    "bigImg": "./img/cards/07@2x.jpg"
+        "id": 6,
+        "header": "Fengo",
+        "info": "Шаблон для интернет магазина одежды",
+        "about": "<li>Макет верстался с помощью сервиса Marcy</li> <li>На 16.03.2024 разработан основной макет страницы.</li> <li>Для работы над макетом использован Bootstrap для добавления карусели</li> <li>Адаптивная версия не планируется 26.11.24</li>",
+        "skils": "<span>HTML,</span> <span>Git,</span> <span>Bootstrap 4</span>",
+        "gitSource": "https://github.com/gleb-erokhin/GB_adaptive_lending",
+        "gitDemo": "https://gleb-erokhin.github.io/GB_adaptive_lending/",
+        "img": "./img/cards/07.jpg",
+        "bigImg": "./img/cards/07@2x.jpg"
     }
 ]`
