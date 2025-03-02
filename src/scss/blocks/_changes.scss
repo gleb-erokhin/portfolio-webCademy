@@ -1,0 +1,20 @@
+.changes {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @include tablet {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    &__skils {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 30px 30px 48px;
+        background-color: #fbfbfb;
+    }
+    &__skil {
+        width: 354px;
+    }
+}
