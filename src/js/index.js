@@ -71,7 +71,7 @@
     let mixer = mixitup('.portfolio__cards', {
         animation: {
             duration: 900,
-            enable: false,
+            enable: true,
         }
     });
 })();

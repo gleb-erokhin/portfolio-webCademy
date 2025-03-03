@@ -1,7 +1,6 @@
 .card {
     max-width: 380px;
     box-shadow: 0px 0px 10px 0px rgba(126, 155, 189, 0.35);
-    transition: transform 0.2s ease-in;
 
     @include tablet {
         max-width: 354px;
