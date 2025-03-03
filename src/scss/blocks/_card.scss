@@ -1,6 +1,6 @@
 .card {
     max-width: 380px;
-    box-shadow: 0px 0px 10px 0px rgba(126, 155, 189, 0.35);
+    box-shadow: 0px 0px 10px 0px rgba(126, 155, 189, 0.35);    
 
     @include tablet {
         max-width: 354px;
@@ -50,5 +50,7 @@
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 8px rgba(113, 150, 192, 0.35);
 }
+
+// библитотека mixitup некоректно работает в анимации если карточке задан tratsition, заменил его на тень

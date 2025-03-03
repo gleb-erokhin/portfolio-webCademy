@@ -70,8 +70,8 @@
     //Инициализация mixitUp
     let mixer = mixitup('.portfolio__cards', {
         animation: {
-            duration: 900,
-            enable: true,
+            duration: 1000,
+            enable: true
         }
     });
 })();
