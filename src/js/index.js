@@ -67,4 +67,11 @@
         $('#header').vide('./files/cover')
     });
 
+    //Инициализация mixitUp
+    let mixer = mixitup('.portfolio__cards', {
+        animation: {
+            duration: 900,
+            enable: false,
+        }
+    });
 })();
