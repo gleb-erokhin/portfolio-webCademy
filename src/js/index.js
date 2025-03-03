@@ -15,7 +15,7 @@
     // Заполнение карточек на странице
     a.forEach(item => {
         d.insertAdjacentHTML("beforeend", `
-			<div class="mix card" data-id="${item.id}">
+			<div class="mix card ${item.category}" data-id="${item.id}" data-order="${item.id}">
 				<a href="#!" data-fancybox data-src="#modalWindow">
 					<div class="card__img-wrapper"> 
 						<div class="card__img">
